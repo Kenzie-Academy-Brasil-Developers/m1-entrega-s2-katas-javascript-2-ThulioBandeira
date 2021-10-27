@@ -55,6 +55,14 @@ function factorial(numero) {
  */
 
 // crie a função fibonacci
+function fibonacci(numero){
+    let fibo = [0,1,];
+    for (let i =0; i<(numero-1);i++){
+        fibo.push(add(fibo[i],fibo[i+1]))
+    }
+    return fibo[numero];
+}
+//7= 0 1 1 2 3 5 8 13
 
 
 // descomente a linha seguinte para testar sua função
